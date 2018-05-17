@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hieu ung 1</title>
+    <meta charset="utf-8">
+    <style>
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+		#parent{
+			width: 600px;
+			height: 200px;
+			border: 1px solid #ccc;
+		}
+		#child{
+			width: 200px;
+			height: 200px;
+			background-color: greenyellow;
+			transform: translateX(200px);
+			visibility: hidden;
+			transition:  transform 0.3s;
+			
+		}
+		#parent:hover #child{
+			opacity: 1;
+			transform: translateX(0);
+			visibility: visible;
+		}
+    </style>
+</head>
+
+<body>
+   <div id="parent">
+	<div id="child"></div>
+	</div>
+</body>
+
+</html>
